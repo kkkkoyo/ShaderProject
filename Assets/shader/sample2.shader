@@ -1,4 +1,9 @@
 ﻿Shader "Custom/sample2" {
+	//##Parameters
+	//C#スクリプトのpublic変数のようなもの
+	Properties{
+		_BaseColor ("Base Color", Color) = (1,1,1,1)
+	}
 	SubShader {
 		//Settings
 		//********************
@@ -16,9 +21,11 @@
 			//worldPos=ワールド座標
 			//screenPos=スクリーン座標
 		};
+		fixed4 _BaseColor;
 
 		void surf (Input IN, inout SurfaceOutputStandard o) {
-			o.Albedo = fixed4(1.0f, 1.0f, 1.0f, 1);
+			//o.Albedo = fixed4(1.0f, 1.0f, 1.0f, 1);
+			o.Albedo = _BaseColor.rgb;
 			//Albedo=基本色
 			//Normal=法線情報
 		}
