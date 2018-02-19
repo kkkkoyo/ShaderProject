@@ -334,7 +334,7 @@ Prefab:
     - target: {fileID: 2300000, guid: ab4dd9d29456e400b9ce19a73031aac5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ee086963d12d04fd3b4123f83e909e23, type: 2}
+      objectReference: {fileID: 2100000, guid: f8f0fbf42eeea48cf99436390f3b5e93, type: 2}
     - target: {fileID: 100000, guid: ab4dd9d29456e400b9ce19a73031aac5, type: 3}
       propertyPath: m_Name
       value: dragon
